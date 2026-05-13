@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIve 兒童安全標準</title>
+<meta name="description" content="AIve 對於兒少性虐待與剝削內容（CSAE / CSAM）的防範政策、處理流程與通報管道。">
+<style>
+  :root {
+    --primary: #7B6BFF;
+    --primary-dark: #5A4DD6;
+    --bg: #F7F5FF;
+    --surface: #FFFFFF;
+    --text: #1F1B2E;
+    --text-muted: #5C5670;
+    --border: #E5E0F5;
+    --danger: #B83D3D;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC",
+      "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+    background: var(--surface);
+    min-height: 100vh;
+    box-shadow: 0 0 40px rgba(123, 107, 255, 0.06);
+  }
+  h1 {
+    color: var(--primary-dark);
+    font-size: 28px;
+    margin: 0 0 8px;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 12px;
+  }
+  h2 {
+    color: var(--primary-dark);
+    font-size: 20px;
+    margin: 36px 0 12px;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 24px 0 8px;
+    color: var(--text);
+  }
+  p { margin: 12px 0; color: var(--text); }
+  strong { color: var(--text); }
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 32px 0;
+  }
+  ul, ol { padding-left: 24px; }
+  li { margin: 6px 0; }
+  a { color: var(--primary-dark); text-decoration: underline; }
+  .callout {
+    background: #FFF4F4;
+    border-left: 4px solid var(--danger);
+    padding: 16px 18px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+    color: var(--text);
+  }
+  .callout strong { color: var(--danger); }
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 14px;
+    text-align: center;
+  }
+  @media (max-width: 640px) {
+    main { padding: 20px 16px 48px; }
+    h1 { font-size: 24px; }
+    h2 { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>AIve 兒童安全標準（Child Safety Standards）</h1>
+<p><strong>最後更新日期：2026 年 5 月 13 日</strong><br>
+<strong>生效日期：2026 年 5 月 13 日</strong></p>
+<p>本文件說明 AIve 對於兒少性虐待與剝削（Child Sexual Abuse and Exploitation, CSAE）內容，包含兒少性虐待素材（Child Sexual Abuse Material, CSAM）的零容忍立場、預防措施、處理流程與通報管道。本標準同時是依據 Google Play 兒童安全標準政策（Child Safety Standards Policy）所公開揭露之內容。</p>
+
+<hr>
+
+<h2>1. 零容忍立場</h2>
+<p>AIve <strong>嚴格禁止</strong>於本服務中製作、上傳、分享、散布、儲存、要求或推廣以下內容或行為：</p>
+<ul>
+  <li>任何形式的兒少性虐待素材（CSAM），包含真實照片、影片，以及以繪圖、動畫、AI 生成或變造等方式呈現之未成年人性化內容。</li>
+  <li>以性目的接觸、誘騙（grooming）、誘導或脅迫未成年人。</li>
+  <li>對未成年人進行性勒索（sextortion）、性剝削、人口販運或商業性剝削。</li>
+  <li>性暗示、性挑逗或將未成年人性化（sexualization of minors）之文字、圖片、影片或音訊。</li>
+  <li>分享、連結或推廣前述內容的外部來源（社群帳號、網址、頻道等）。</li>
+</ul>
+<div class="callout">
+  <strong>提醒</strong>：上述行為在多數國家／地區屬於嚴重刑事犯罪。AIve 一經確認，將立即移除內容、永久停權帳號，並依法主動向主管機關或執法機構通報，不受帳號內其他狀態（VIP、驗證徽章、舉報紀錄）影響。
+</div>
+
+<hr>
+
+<h2>2. 服務只對 18 歲以上開放</h2>
+<p>AIve 是僅供 18 歲以上成年人使用的社交配對服務。我們不刻意蒐集 18 歲以下使用者資料，並透過下列機制把關：</p>
+<ul>
+  <li><strong>註冊時年齡確認</strong>：使用者於完成註冊前必須明確確認自己已滿 18 歲，並由系統將時間戳存入帳號（<code>age_confirmed_at</code> 欄位）。</li>
+  <li><strong>真人驗證</strong>：使用 App 主要互動功能（發內容、邀請、聊天）前必須通過三步驟自拍驗證；同一張臉不允許註冊多個帳號。本機制可在多數情境協助攔截未成年人或冒名使用。</li>
+  <li><strong>跨帳號去重</strong>：若 AIve 偵測到同一張臉曾與已停權之未成年帳號連結，後續註冊將被阻擋。</li>
+  <li><strong>內容限制</strong>：使用者上傳之代表照片（cover）會經人臉檢測與審查，不符合者會被擋下並要求重傳；含有未成年人之圖像不會進入流通。</li>
+</ul>
+<p>若 AIve 經由舉報、驗證流程、或其他資料合理判定使用者未滿 18 歲，將立即停權帳號並依本標準處理其上傳之內容。</p>
+
+<hr>
+
+<h2>3. 內部偵測與審查</h2>
+<p>除使用者舉報之外，AIve 主動採取下列措施降低兒少受害風險：</p>
+<ul>
+  <li><strong>影像審查</strong>：上傳的 cover 照片會經自動化人臉與內容檢測，過濾未通過真人驗證、未成年外觀或明顯違規之圖像。</li>
+  <li><strong>模糊預覽機制</strong>：所有照片在 feed 預設以模糊版呈現，雙方互相同意後才解鎖清晰版，降低未授權散布的可能。</li>
+  <li><strong>距離區間化</strong>：不對外顯示精確地理位置，僅以公里級區間呈現，降低跨平台追蹤未成年人的可能。</li>
+  <li><strong>非即時聯絡通道</strong>：限制聊天功能僅在配對成功後開啟，並僅支援文字訊息；目前不支援照片或檔案發送。</li>
+  <li><strong>稽核紀錄</strong>：違規處理、帳號停權、內容下架皆會寫入內部稽核日誌（AuditLog），供事後審視與必要的執法機關協查。</li>
+</ul>
+
+<hr>
+
+<h2>4. 使用者如何在 App 內舉報</h2>
+<p>任何使用者發現可能涉及兒少性虐待或剝削的內容、訊息或帳號，皆可透過下列方式立即舉報：</p>
+<ul>
+  <li>於任一卡片詳情、聊天訊息或邀請畫面，點擊「舉報」按鈕，選擇對應原因（含「兒童安全」相關選項）並可附文字補充。</li>
+  <li>於任一使用者個人頁，點擊「封鎖」立即阻斷對方互動；封鎖與舉報可同時進行。</li>
+  <li>對於緊急或無法在 App 內舉報的情境，可直接寄信至下方兒童安全聯絡信箱。</li>
+</ul>
+<p>提交舉報後，相關內容會立即進入內部審查佇列；針對涉及兒少安全的舉報，AIve 採取最高優先級處理。</p>
+
+<hr>
+
+<h2>5. 違規處理流程</h2>
+<p>AIve 收到舉報或內部偵測到可能違規後，將依下列流程處理：</p>
+<ol>
+  <li><strong>立即下架</strong>：經初步判定具高度可能違規之內容立即從可見列表移除，並暫停相關帳號之互動功能。</li>
+  <li><strong>內部審查</strong>：由 AIve 營運人員審視舉報內容、相關 metadata 與帳號歷史紀錄。</li>
+  <li><strong>處置決定</strong>：依違規嚴重程度採取——警告、限制功能、暫停帳號、永久停權、刪除帳號。涉及 CSAE / CSAM 一律永久停權。</li>
+  <li><strong>證據保存</strong>：依法令要求保存必要證據，供主管機關或執法機關調查使用，並避免將相關內容繼續曝露於人員審查介面。</li>
+  <li><strong>對外通報</strong>：若內容或行為涉及犯罪嫌疑，AIve 會依適用法律主動向主管機關（如台灣警政、衛福部）、執法機關，或國際通報機制（如 NCMEC CyberTipline）通報。</li>
+</ol>
+
+<hr>
+
+<h2>6. 與主管機關及通報機構配合</h2>
+<p>當收到具法律效力之要求（搜索票、調查令、法院命令等）或基於防止重大危害之合理依據時，AIve 會在法律允許範圍內提供相關資料協助調查。AIve 也會主動依循下列原則：</p>
+<ul>
+  <li>依適用法律遵循《兒童及少年福利與權益保障法》、《兒童及少年性剝削防制條例》等國內法令所要求之通報義務。</li>
+  <li>如服務於台灣以外地區提供，亦會配合所在司法管轄區之兒少保護法令。</li>
+  <li>遵循國際通用之兒童安全通報機制（如 NCMEC CyberTipline）所列之通報流程。</li>
+</ul>
+
+<hr>
+
+<h2>7. 兒童安全聯絡管道</h2>
+<p>使用者、家長、學校、社工、執法人員，或任何第三方若需向 AIve 通報兒童安全疑慮、調閱資料或進行協查，請寄信至：</p>
+<p><strong>support@aive.tw</strong></p>
+<p>主旨請註明「Child Safety / 兒童安全」以利優先處理。AIve 將於 72 小時內回應急迫性兒少安全案件，其他相關詢問將於 30 日內回覆。</p>
+<p>如您正在發生緊急危險或需要即時援助，請優先撥打當地報案電話（台灣：110 報案、113 婦幼保護專線），AIve 無法替代緊急救援機構。</p>
+
+<hr>
+
+<h2>8. 政策變更</h2>
+<p>本標準可能隨法令變更、產品功能調整或處理流程精進而更新。重大變更時將更新本頁最上方之「最後更新日期」。本頁 URL（<a href="https://legal.aive.tw/child-safety-standards.html">https://legal.aive.tw/child-safety-standards.html</a>）將保持穩定，便於主管機關、Google Play 與第三方追蹤。</p>
+
+<footer>
+  © 2026 AIve · <a href="mailto:support@aive.tw">support@aive.tw</a> · <a href="privacy-policy.html">隱私權政策</a>
+</footer>
+</main>
+</body>
+</html>
